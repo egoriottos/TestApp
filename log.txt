@@ -1,0 +1,1273 @@
+2024-04-09 03:18:30 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 336 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 03:18:30 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 03:18:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 03:18:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 03:18:30 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 03:18:43 INFO  o.s.b.docker.compose.core.DockerCli log -  Network testappforivan_default  Creating
+2024-04-09 03:18:43 INFO  o.s.b.docker.compose.core.DockerCli log -  Network testappforivan_default  Created
+2024-04-09 03:18:43 INFO  o.s.b.docker.compose.core.DockerCli log -  Container bighomework-db  Creating
+2024-04-09 03:18:44 INFO  o.s.b.docker.compose.core.DockerCli log - Error response from daemon: Conflict. The container name "/bighomework-db" is already in use by container "a7f478f79fd1e1bbef38592ecdc99e8471450a4c42261143031e34e1e3da1093". You have to remove (or rename) that container to be able to reuse that name.
+2024-04-09 03:18:44 ERROR o.s.boot.SpringApplication reportFailure - Application run failed
+org.springframework.boot.docker.compose.core.ProcessExitException: 'docker compose --file D:\TestAppForIvan\compose.yaml --ansi never up --no-color --detach --wait' failed with exit code 1.
+
+Stdout:
+
+
+Stderr:
+ Network testappforivan_default  Creating
+ Network testappforivan_default  Created
+ Container bighomework-db  Creating
+Error response from daemon: Conflict. The container name "/bighomework-db" is already in use by container "a7f478f79fd1e1bbef38592ecdc99e8471450a4c42261143031e34e1e3da1093". You have to remove (or rename) that container to be able to reuse that name.
+
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:96)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:80)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.up(DefaultDockerCompose.java:51)
+	at org.springframework.boot.docker.compose.lifecycle.StartCommand.applyTo(StartCommand.java:51)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:123)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.example.testappforivan.TestAppForIvanApplication.main(TestAppForIvanApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-04-09 03:22:35 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 23440 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 03:22:35 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 03:22:35 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 03:22:35 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 03:22:35 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 03:22:39 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 03:22:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 03:22:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 03:22:41 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 03:22:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+2024-04-09 03:22:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 03:22:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 03:22:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-04-09 03:22:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 03:22:41 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 03:22:41 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 03:22:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 03:22:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2124 ms
+2024-04-09 03:22:41 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 03:22:41 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 03:22:41 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 03:22:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 03:22:42 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 03:22:47 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@198db220
+2024-04-09 03:22:47 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 03:22:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 03:22:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 03:22:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 03:22:48 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 03:22:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 03:22:49 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 14.468 seconds (process running for 16.387)
+2024-04-09 03:23:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 03:23:22 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 03:23:22 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 11:55:23 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 11748 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 11:55:23 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 11:55:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 11:55:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 11:55:23 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 11:55:27 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 33 ms. Found 0 JDBC repository interfaces.
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 11:55:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 197 ms. Found 1 JPA repository interface.
+2024-04-09 11:55:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 11:55:31 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 11:55:31 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 11:55:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 11:55:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3958 ms
+2024-04-09 11:55:31 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 11:55:31 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 11:55:31 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 11:55:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 11:55:31 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 11:55:34 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3968e4f1
+2024-04-09 11:55:34 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 11:55:36 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 11:55:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 11:55:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 11:55:38 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 11:55:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 11:55:40 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 18.018 seconds (process running for 22.833)
+2024-04-09 12:02:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-09 12:02:11 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-09 12:02:11 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Completed initialization in 4 ms
+2024-04-09 12:03:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:03:31 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 12:03:31 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 12:03:42 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 10364 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:03:42 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:03:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 12:03:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 12:03:42 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:03:44 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:03:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2024-04-09 12:03:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:03:46 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:03:46 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:03:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:03:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1452 ms
+2024-04-09 12:03:46 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:03:46 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 12:03:46 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:03:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:03:46 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 12:03:47 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f2f8488
+2024-04-09 12:03:47 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 12:03:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:03:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:03:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:03:49 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:03:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:03:49 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 7.571 seconds (process running for 9.095)
+2024-04-09 12:05:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-09 12:05:27 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-09 12:05:27 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Completed initialization in 1 ms
+2024-04-09 12:06:39 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'id' for method parameter type Integer is not present]
+2024-04-09 12:08:01 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'id' for method parameter type Integer is not present]
+2024-04-09 12:16:23 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'id' for method parameter type Integer is not present]
+2024-04-09 12:16:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:16:44 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 12:16:44 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 12:17:04 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 14216 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:17:04 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:17:04 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 12:17:04 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 12:17:04 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:17:07 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2024-04-09 12:17:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:17:09 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:17:09 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:17:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:17:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1457 ms
+2024-04-09 12:17:09 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:17:09 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 12:17:09 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:17:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:17:11 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 12:17:11 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a579e07
+2024-04-09 12:17:11 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 12:17:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:17:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:17:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:17:13 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:17:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:17:13 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 10.003 seconds (process running for 13.363)
+2024-04-09 12:17:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-09 12:17:33 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-09 12:17:33 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Completed initialization in 1 ms
+2024-04-09 12:17:33 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.example.testappforivan.app.presentation.currency.dto.queries.CurrencyQuery com.example.testappforivan.app.presentation.currency.dto.CurrencyController.update(java.lang.Integer,com.example.testappforivan.app.presentation.currency.dto.commands.UpdateCurrencyCommands)]
+2024-04-09 12:20:35 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void com.example.testappforivan.app.presentation.currency.dto.CurrencyController.delete(java.lang.Integer,com.example.testappforivan.app.presentation.currency.dto.commands.UpdateCurrencyCommands)]
+2024-04-09 12:21:14 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void com.example.testappforivan.app.presentation.currency.dto.CurrencyController.delete(java.lang.Integer,com.example.testappforivan.app.presentation.currency.dto.commands.UpdateCurrencyCommands)]
+2024-04-09 12:21:43 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void com.example.testappforivan.app.presentation.currency.dto.CurrencyController.delete(java.lang.Integer,com.example.testappforivan.app.presentation.currency.dto.commands.UpdateCurrencyCommands)]
+2024-04-09 12:23:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:23:22 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 12:23:22 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 12:23:33 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 1688 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:23:33 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:23:33 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 12:23:33 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 12:23:33 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:23:35 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:23:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-04-09 12:23:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:23:37 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:23:37 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:23:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:23:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1337 ms
+2024-04-09 12:23:37 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:23:37 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 12:23:37 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:23:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:23:37 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 12:23:38 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b9a2fb9
+2024-04-09 12:23:38 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 12:23:39 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:23:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:23:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:23:39 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:23:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:23:40 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 7.515 seconds (process running for 9.335)
+2024-04-09 12:23:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-09 12:23:50 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-09 12:23:50 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Completed initialization in 2 ms
+2024-04-09 12:23:50 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Integer is not present]
+2024-04-09 12:24:36 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Integer is not present]
+2024-04-09 12:26:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:26:40 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 12:26:40 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 12:26:46 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 12688 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:26:46 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:26:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 12:26:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 12:26:47 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:26:49 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:26:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-04-09 12:26:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:26:51 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:26:51 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:26:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:26:51 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1441 ms
+2024-04-09 12:26:51 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:26:51 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 12:26:51 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:26:51 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:26:51 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 12:26:52 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@732fef00
+2024-04-09 12:26:52 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 12:26:53 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:26:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:26:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:26:53 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:26:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:26:53 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 7.353 seconds (process running for 8.349)
+2024-04-09 12:27:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-09 12:27:44 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-09 12:27:44 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Completed initialization in 1 ms
+2024-04-09 12:27:44 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void com.example.testappforivan.app.presentation.currency.dto.CurrencyController.delete(java.lang.Integer,com.example.testappforivan.app.presentation.currency.dto.commands.UpdateCurrencyCommands)]
+2024-04-09 12:27:55 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver logException - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void com.example.testappforivan.app.presentation.currency.dto.CurrencyController.delete(java.lang.Integer,com.example.testappforivan.app.presentation.currency.dto.commands.UpdateCurrencyCommands)]
+2024-04-09 12:29:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:29:47 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 12:29:47 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 12:29:52 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:29:52 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:29:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-09 12:29:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-09 12:29:52 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:29:55 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:29:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-04-09 12:29:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:29:56 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:29:56 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:29:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:29:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1280 ms
+2024-04-09 12:29:56 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:29:56 INFO  org.hibernate.Version logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-09 12:29:56 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:29:56 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:29:56 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Starting...
+2024-04-09 12:29:57 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77d020ad
+2024-04-09 12:29:57 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-1 - Start completed.
+2024-04-09 12:29:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:29:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:29:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:29:58 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:29:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:29:58 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 6.559 seconds (process running for 7.405)
+2024-04-09 12:30:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-09 12:30:11 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Initializing Servlet 'dispatcherServlet'
+2024-04-09 12:30:11 INFO  o.s.web.servlet.DispatcherServlet initServletBean - Completed initialization in 1 ms
+2024-04-09 12:35:29 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:35:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:35:29 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown initiated...
+2024-04-09 12:35:29 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-1 - Shutdown completed.
+2024-04-09 12:35:29 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:35:29 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:35:29 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:35:32 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:35:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2024-04-09 12:35:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:35:34 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:35:34 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:35:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:35:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2367 ms
+2024-04-09 12:35:34 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:35:34 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:35:34 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:35:34 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-2 - Starting...
+2024-04-09 12:35:34 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5406fdcd
+2024-04-09 12:35:34 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-2 - Start completed.
+2024-04-09 12:35:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:35:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:35:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:35:34 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:35:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:35:34 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 5.597 seconds (process running for 343.529)
+2024-04-09 12:35:34 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:35:36 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:35:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:35:36 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-2 - Shutdown initiated...
+2024-04-09 12:35:36 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-2 - Shutdown completed.
+2024-04-09 12:35:36 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:35:36 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:35:36 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:35:38 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:35:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:35:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:35:38 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:35:38 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:35:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:35:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 277 ms
+2024-04-09 12:35:38 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:35:38 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:35:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:35:38 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-3 - Starting...
+2024-04-09 12:35:38 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@701f5c72
+2024-04-09 12:35:38 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-3 - Start completed.
+2024-04-09 12:35:39 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:35:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:35:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:35:39 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:35:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:35:39 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.821 seconds (process running for 347.797)
+2024-04-09 12:35:39 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:37:14 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:37:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:14 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-3 - Shutdown initiated...
+2024-04-09 12:37:14 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-3 - Shutdown completed.
+2024-04-09 12:37:14 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:37:14 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:37:14 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:37:16 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:37:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:37:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:37:17 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:37:17 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:37:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:37:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 584 ms
+2024-04-09 12:37:17 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:37:17 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:37:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:37:17 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-4 - Starting...
+2024-04-09 12:37:17 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@895a624
+2024-04-09 12:37:17 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-4 - Start completed.
+2024-04-09 12:37:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:37:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:17 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:37:17 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:37:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:37:18 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 3.454 seconds (process running for 446.569)
+2024-04-09 12:37:18 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) found beans of type 'java.util.concurrent.Executor' applicationTaskExecutor (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-09 12:37:19 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:37:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:19 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-4 - Shutdown initiated...
+2024-04-09 12:37:19 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-4 - Shutdown completed.
+2024-04-09 12:37:19 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:37:19 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:37:19 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:37:20 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:37:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-09 12:37:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:37:21 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:37:21 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:37:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:37:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 276 ms
+2024-04-09 12:37:21 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:37:21 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:37:21 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:37:21 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-5 - Starting...
+2024-04-09 12:37:21 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7b7bcf2f
+2024-04-09 12:37:21 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-5 - Start completed.
+2024-04-09 12:37:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:37:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:37:21 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:37:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:37:21 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.133 seconds (process running for 450.129)
+2024-04-09 12:37:21 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:37:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:37:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:42 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-5 - Shutdown initiated...
+2024-04-09 12:37:42 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-5 - Shutdown completed.
+2024-04-09 12:37:42 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:37:42 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:37:42 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:37:43 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:37:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:37:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:37:44 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:37:44 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:37:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:37:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 430 ms
+2024-04-09 12:37:44 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:37:44 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:37:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:37:44 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-6 - Starting...
+2024-04-09 12:37:44 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@6de4ef11
+2024-04-09 12:37:44 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-6 - Start completed.
+2024-04-09 12:37:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:37:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:37:44 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:37:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:37:44 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.346 seconds (process running for 473.319)
+2024-04-09 12:37:44 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:37:46 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:37:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:46 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-6 - Shutdown initiated...
+2024-04-09 12:37:46 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-6 - Shutdown completed.
+2024-04-09 12:37:46 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:37:46 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:37:46 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:37:47 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:37:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:37:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:37:48 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:37:48 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:37:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:37:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 311 ms
+2024-04-09 12:37:48 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:37:48 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:37:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:37:48 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-7 - Starting...
+2024-04-09 12:37:48 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@498ad8df
+2024-04-09 12:37:48 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-7 - Start completed.
+2024-04-09 12:37:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:37:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:37:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:37:48 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:37:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:37:48 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.308 seconds (process running for 477.095)
+2024-04-09 12:37:48 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:39:02 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:39:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:02 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-7 - Shutdown initiated...
+2024-04-09 12:39:02 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-7 - Shutdown completed.
+2024-04-09 12:39:02 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:39:02 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:39:02 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:39:04 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:39:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:39:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:39:04 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:39:04 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:39:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:39:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 325 ms
+2024-04-09 12:39:04 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:39:04 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:39:04 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:39:04 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-8 - Starting...
+2024-04-09 12:39:05 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@20e7ac17
+2024-04-09 12:39:05 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-8 - Start completed.
+2024-04-09 12:39:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:39:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:39:05 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:39:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:39:05 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 3.117 seconds (process running for 553.921)
+2024-04-09 12:39:05 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:39:06 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:39:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:06 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-8 - Shutdown initiated...
+2024-04-09 12:39:06 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-8 - Shutdown completed.
+2024-04-09 12:39:06 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:39:06 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:39:06 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:39:08 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:39:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:39:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:39:08 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:39:08 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:39:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:39:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 274 ms
+2024-04-09 12:39:08 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:39:08 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:39:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:39:08 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-9 - Starting...
+2024-04-09 12:39:08 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@3ab1bf5d
+2024-04-09 12:39:08 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-9 - Start completed.
+2024-04-09 12:39:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:39:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:39:09 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:39:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:39:09 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.363 seconds (process running for 557.78)
+2024-04-09 12:39:09 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:39:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:39:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:42 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-9 - Shutdown initiated...
+2024-04-09 12:39:42 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-9 - Shutdown completed.
+2024-04-09 12:39:42 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:39:42 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:39:42 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:39:44 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:39:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-09 12:39:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:39:44 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:39:44 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:39:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:39:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 274 ms
+2024-04-09 12:39:44 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:39:44 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:39:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:39:44 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-10 - Starting...
+2024-04-09 12:39:44 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@6a1d01a
+2024-04-09 12:39:44 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-10 - Start completed.
+2024-04-09 12:39:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:39:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:39:44 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:39:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:39:44 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.555 seconds (process running for 593.35)
+2024-04-09 12:39:44 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:39:46 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:39:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:46 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-10 - Shutdown initiated...
+2024-04-09 12:39:46 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-10 - Shutdown completed.
+2024-04-09 12:39:46 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:39:46 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:39:46 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:39:47 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:39:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:39:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:39:47 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:39:47 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:39:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:39:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 317 ms
+2024-04-09 12:39:48 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:39:48 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:39:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:39:48 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-11 - Starting...
+2024-04-09 12:39:48 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@62677018
+2024-04-09 12:39:48 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-11 - Start completed.
+2024-04-09 12:39:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:39:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:39:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:39:48 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:39:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:39:48 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.048 seconds (process running for 596.869)
+2024-04-09 12:39:48 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:40:10 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:40:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:10 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-11 - Shutdown initiated...
+2024-04-09 12:40:10 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-11 - Shutdown completed.
+2024-04-09 12:40:10 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:40:10 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:40:10 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:40:12 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:40:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:40:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:40:12 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:40:12 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:40:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:40:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 252 ms
+2024-04-09 12:40:12 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:40:12 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:40:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:40:12 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-12 - Starting...
+2024-04-09 12:40:12 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@58969ef1
+2024-04-09 12:40:12 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-12 - Start completed.
+2024-04-09 12:40:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:40:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:40:13 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:40:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:40:13 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 3.26 seconds (process running for 621.929)
+2024-04-09 12:40:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:40:14 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:40:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:14 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-12 - Shutdown initiated...
+2024-04-09 12:40:14 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-12 - Shutdown completed.
+2024-04-09 12:40:14 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:40:14 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:40:14 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:40:16 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:40:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-09 12:40:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:40:17 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:40:17 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:40:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:40:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 344 ms
+2024-04-09 12:40:17 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:40:17 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:40:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:40:17 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-13 - Starting...
+2024-04-09 12:40:17 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@492e1afe
+2024-04-09 12:40:17 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-13 - Start completed.
+2024-04-09 12:40:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:40:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:40:18 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:40:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:40:18 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 3.528 seconds (process running for 626.872)
+2024-04-09 12:40:18 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:40:47 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:40:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:47 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-13 - Shutdown initiated...
+2024-04-09 12:40:47 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-13 - Shutdown completed.
+2024-04-09 12:40:47 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:40:47 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:40:47 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:40:50 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:40:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:40:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:40:52 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:40:52 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:40:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:40:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2206 ms
+2024-04-09 12:40:52 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:40:52 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:40:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:40:52 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-14 - Starting...
+2024-04-09 12:40:53 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-14 - Added connection org.postgresql.jdbc.PgConnection@788ce6c9
+2024-04-09 12:40:53 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-14 - Start completed.
+2024-04-09 12:40:53 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:40:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:40:53 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:40:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:40:53 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 6.173 seconds (process running for 662.008)
+2024-04-09 12:40:53 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:40:54 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:40:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:54 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-14 - Shutdown initiated...
+2024-04-09 12:40:54 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-14 - Shutdown completed.
+2024-04-09 12:40:54 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:40:54 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:40:54 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:40:56 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:40:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-04-09 12:40:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:40:57 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:40:57 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:40:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:40:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 360 ms
+2024-04-09 12:40:57 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:40:57 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:40:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:40:57 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-15 - Starting...
+2024-04-09 12:40:57 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-15 - Added connection org.postgresql.jdbc.PgConnection@4addff21
+2024-04-09 12:40:57 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-15 - Start completed.
+2024-04-09 12:40:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:40:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:40:57 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:40:57 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:40:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:40:57 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.934 seconds (process running for 666.389)
+2024-04-09 12:40:57 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:50:07 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-04-09 12:50:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:50:29 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-15 - Shutdown initiated...
+2024-04-09 12:50:30 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-15 - Shutdown completed.
+2024-04-09 12:50:58 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:50:58 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:50:58 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:51:27 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:51:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:51:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:51:32 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:51:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 257 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:51:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:51:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:51:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-04-09 12:51:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:51:37 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:51:37 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:51:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:51:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 10748 ms
+2024-04-09 12:51:39 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:51:39 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:51:39 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:51:39 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-16 - Starting...
+2024-04-09 12:51:43 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-16 - Added connection org.postgresql.jdbc.PgConnection@79ab6106
+2024-04-09 12:51:43 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-16 - Start completed.
+2024-04-09 12:51:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:51:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:51:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:51:52 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:51:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:51:53 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 55.208 seconds (process running for 1321.563)
+2024-04-09 12:51:53 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:51:54 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2024-04-09 12:51:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:51:54 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-16 - Shutdown initiated...
+2024-04-09 12:51:54 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-16 - Shutdown completed.
+2024-04-09 12:51:55 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:51:55 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:51:55 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:52:03 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:52:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-09 12:52:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:52:09 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:52:09 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:52:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:52:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 6296 ms
+2024-04-09 12:52:10 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:52:10 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:52:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:52:10 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-17 - Starting...
+2024-04-09 12:52:11 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-17 - Added connection org.postgresql.jdbc.PgConnection@3fe0fb7
+2024-04-09 12:52:11 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-17 - Start completed.
+2024-04-09 12:52:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:52:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:52:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:52:13 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:52:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:52:13 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 18.628 seconds (process running for 1342.014)
+2024-04-09 12:52:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:52:27 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-04-09 12:52:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:52:27 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-17 - Shutdown initiated...
+2024-04-09 12:52:27 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-17 - Shutdown completed.
+2024-04-09 12:52:28 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:52:28 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:52:28 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:52:37 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:52:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:52:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:52:40 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:52:40 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:52:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:52:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3281 ms
+2024-04-09 12:52:40 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:52:40 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:52:40 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:52:40 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-18 - Starting...
+2024-04-09 12:52:41 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-18 - Added connection org.postgresql.jdbc.PgConnection@5a42eac5
+2024-04-09 12:52:41 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-18 - Start completed.
+2024-04-09 12:52:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:52:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:52:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:52:43 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:52:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:52:43 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 15.56 seconds (process running for 1372.281)
+2024-04-09 12:52:43 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:52:54 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2024-04-09 12:52:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:52:54 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-18 - Shutdown initiated...
+2024-04-09 12:52:54 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-18 - Shutdown completed.
+2024-04-09 12:52:55 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:52:55 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:52:55 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:52:59 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-04-09 12:53:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:53:00 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:53:00 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:53:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:53:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 503 ms
+2024-04-09 12:53:00 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:53:00 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:53:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:53:00 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-19 - Starting...
+2024-04-09 12:53:00 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-19 - Added connection org.postgresql.jdbc.PgConnection@78ae2743
+2024-04-09 12:53:00 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-19 - Start completed.
+2024-04-09 12:53:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:53:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:53:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:53:00 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:53:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:53:00 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 5.237 seconds (process running for 1389.185)
+2024-04-09 12:53:00 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+
+Negative matches:
+-----------------
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-09 12:55:51 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 12 class path changes (12 additions, 0 deletions, 0 modifications)
+2024-04-09 12:55:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:55:51 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-19 - Shutdown initiated...
+2024-04-09 12:55:52 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-19 - Shutdown completed.
+2024-04-09 12:55:52 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:55:52 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:55:52 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:55:53 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:55:53 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:55:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:55:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:55:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:55:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-09 12:55:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:55:54 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:55:54 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:55:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:55:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 395 ms
+2024-04-09 12:55:54 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:55:54 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:55:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:55:54 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-20 - Starting...
+2024-04-09 12:55:54 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-20 - Added connection org.postgresql.jdbc.PgConnection@78d28fca
+2024-04-09 12:55:54 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-20 - Start completed.
+2024-04-09 12:55:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:55:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:55:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:55:54 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:55:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:55:54 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.839 seconds (process running for 1563.482)
+2024-04-09 12:55:54 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:57:03 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:57:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:03 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-20 - Shutdown initiated...
+2024-04-09 12:57:03 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-20 - Shutdown completed.
+2024-04-09 12:57:03 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:57:03 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:57:03 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:57:05 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:57:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:57:05 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:57:05 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:57:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:57:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 286 ms
+2024-04-09 12:57:05 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:57:05 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:57:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:57:05 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-21 - Starting...
+2024-04-09 12:57:05 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-21 - Added connection org.postgresql.jdbc.PgConnection@224cd37b
+2024-04-09 12:57:05 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-21 - Start completed.
+2024-04-09 12:57:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:57:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:57:05 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:57:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:57:05 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.273 seconds (process running for 1634.323)
+2024-04-09 12:57:05 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:57:07 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:57:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:07 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-21 - Shutdown initiated...
+2024-04-09 12:57:07 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-21 - Shutdown completed.
+2024-04-09 12:57:07 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:57:07 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:57:07 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:57:08 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:57:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:57:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:57:08 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:57:08 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:57:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:57:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 303 ms
+2024-04-09 12:57:08 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:57:08 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:57:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:57:08 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-22 - Starting...
+2024-04-09 12:57:08 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-22 - Added connection org.postgresql.jdbc.PgConnection@736eb122
+2024-04-09 12:57:08 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-22 - Start completed.
+2024-04-09 12:57:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:57:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:57:09 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:57:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:57:09 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.002 seconds (process running for 1637.833)
+2024-04-09 12:57:09 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:57:20 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:57:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:20 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-22 - Shutdown initiated...
+2024-04-09 12:57:20 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-22 - Shutdown completed.
+2024-04-09 12:57:21 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:57:21 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:57:21 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:57:22 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:57:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:57:22 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:57:22 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:57:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:57:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 253 ms
+2024-04-09 12:57:22 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:57:22 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:57:22 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:57:22 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-23 - Starting...
+2024-04-09 12:57:22 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-23 - Added connection org.postgresql.jdbc.PgConnection@7805c75d
+2024-04-09 12:57:22 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-23 - Start completed.
+2024-04-09 12:57:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:57:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:23 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:57:23 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:57:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:57:23 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.333 seconds (process running for 1651.886)
+2024-04-09 12:57:23 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:57:24 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:57:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:24 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-23 - Shutdown initiated...
+2024-04-09 12:57:24 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-23 - Shutdown completed.
+2024-04-09 12:57:24 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:57:24 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:57:24 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:57:26 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:57:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:57:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:57:26 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:57:26 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:57:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:57:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 315 ms
+2024-04-09 12:57:26 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:57:26 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:57:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:57:26 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-24 - Starting...
+2024-04-09 12:57:26 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-24 - Added connection org.postgresql.jdbc.PgConnection@3fd855d6
+2024-04-09 12:57:26 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-24 - Start completed.
+2024-04-09 12:57:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:57:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:57:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:57:26 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:57:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:57:26 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.034 seconds (process running for 1655.415)
+2024-04-09 12:57:26 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:59:34 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-09 12:59:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:59:34 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-24 - Shutdown initiated...
+2024-04-09 12:59:34 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-24 - Shutdown completed.
+2024-04-09 12:59:34 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:59:34 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:59:34 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:59:36 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:59:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:59:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:59:36 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:59:36 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:59:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:59:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 240 ms
+2024-04-09 12:59:36 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:59:36 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:59:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:59:36 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-25 - Starting...
+2024-04-09 12:59:36 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-25 - Added connection org.postgresql.jdbc.PgConnection@c1c9d8a
+2024-04-09 12:59:36 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-25 - Start completed.
+2024-04-09 12:59:36 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:59:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:59:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:59:36 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:59:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:59:36 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.244 seconds (process running for 1785.466)
+2024-04-09 12:59:36 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 12:59:38 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-09 12:59:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:59:38 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-25 - Shutdown initiated...
+2024-04-09 12:59:38 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-25 - Shutdown completed.
+2024-04-09 12:59:38 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 12:59:38 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 12:59:38 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 12:59:40 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 12:59:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 12:59:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 12:59:40 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 12:59:40 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 12:59:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 12:59:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 229 ms
+2024-04-09 12:59:40 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 12:59:40 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 12:59:40 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 12:59:40 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-26 - Starting...
+2024-04-09 12:59:40 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-26 - Added connection org.postgresql.jdbc.PgConnection@7d5b6cf0
+2024-04-09 12:59:40 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-26 - Start completed.
+2024-04-09 12:59:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 12:59:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 12:59:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 12:59:41 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 12:59:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 12:59:41 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 3.063 seconds (process running for 1790.019)
+2024-04-09 12:59:41 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 13:00:57 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-04-09 13:00:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 13:00:57 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-26 - Shutdown initiated...
+2024-04-09 13:00:57 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-26 - Shutdown completed.
+2024-04-09 13:00:57 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 13:00:57 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 13:00:57 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 13:00:59 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 13:00:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-09 13:00:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 13:00:59 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 13:00:59 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 13:00:59 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 13:00:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 400 ms
+2024-04-09 13:00:59 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 13:00:59 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 13:00:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 13:00:59 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-27 - Starting...
+2024-04-09 13:00:59 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-27 - Added connection org.postgresql.jdbc.PgConnection@6577c665
+2024-04-09 13:00:59 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-27 - Start completed.
+2024-04-09 13:00:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 13:00:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 13:00:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 13:00:59 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 13:00:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 13:00:59 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.617 seconds (process running for 1868.403)
+2024-04-09 13:00:59 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
+2024-04-09 13:01:01 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener onApplicationEvent - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2024-04-09 13:01:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 13:01:01 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-27 - Shutdown initiated...
+2024-04-09 13:01:01 INFO  com.zaxxer.hikari.HikariDataSource close - HikariPool-27 - Shutdown completed.
+2024-04-09 13:01:01 INFO  c.e.t.TestAppForIvanApplication logStarting - Starting TestAppForIvanApplication using Java 21.0.2 with PID 22900 (D:\TestAppForIvan\build\classes\java\main started by titko in D:\TestAppForIvan)
+2024-04-09 13:01:01 INFO  c.e.t.TestAppForIvanApplication logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2024-04-09 13:01:01 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager getComposeFile - Using Docker Compose file 'D:\TestAppForIvan\compose.yaml'
+2024-04-09 13:01:02 INFO  o.s.b.d.c.l.DockerComposeLifecycleManager start - There are already Docker Compose services running, skipping startup
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport isStrictRepositoryCandidate - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.testappforivan.app.repository.CurrencyRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09 13:01:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate registerRepositoriesIn - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-09 13:01:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer initialize - Tomcat initialized with port 8080 (http)
+2024-04-09 13:01:03 INFO  o.a.catalina.core.StandardService log - Starting service [Tomcat]
+2024-04-09 13:01:03 INFO  o.a.catalina.core.StandardEngine log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-09 13:01:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] log - Initializing Spring embedded WebApplicationContext
+2024-04-09 13:01:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 280 ms
+2024-04-09 13:01:03 INFO  o.h.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09 13:01:03 INFO  o.h.c.i.RegionFactoryInitiator initiateService - HHH000026: Second-level cache disabled
+2024-04-09 13:01:03 INFO  o.s.o.j.p.SpringPersistenceUnitInfo addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09 13:01:03 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-28 - Starting...
+2024-04-09 13:01:03 INFO  com.zaxxer.hikari.pool.HikariPool checkFailFast - HikariPool-28 - Added connection org.postgresql.jdbc.PgConnection@7cbb1016
+2024-04-09 13:01:03 INFO  com.zaxxer.hikari.HikariDataSource getConnection - HikariPool-28 - Start completed.
+2024-04-09 13:01:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09 13:01:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09 13:01:03 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09 13:01:03 INFO  o.s.b.d.a.OptionalLiveReloadServer startServer - LiveReload server is running on port 35729
+2024-04-09 13:01:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer start - Tomcat started on port 8080 (http) with context path ''
+2024-04-09 13:01:03 INFO  c.e.t.TestAppForIvanApplication logStarted - Started TestAppForIvanApplication in 2.098 seconds (process running for 1872.021)
+2024-04-09 13:01:03 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener onApplicationEvent - Condition evaluation unchanged
